@@ -7,11 +7,17 @@ import org.springframework.stereotype.Service;
 
 import com.ejerciciocurso.model.Curso;
 
+/**
+ * Implementación del servicio para gestionar cursos.
+ * Implementa la interfaz CursoService y define la lógica de los métodos declarados en la interfaz.
+ */
 @Service
 public class CursoServiceImp implements CursoService{
 
     List <Curso> cursos;
-
+    /**
+     * Constructor por defecto que inicializa la lista de cursos con valores predeterminados.
+     */
     public CursoServiceImp() {
         
         cursos = new ArrayList<>();
